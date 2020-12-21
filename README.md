@@ -1,18 +1,22 @@
 # Landing Page Portfolio
 This portfolio regroup all my landing page developments
 
-## Warning
-All of the pictures or images used in these pages aren't mine.
-The link of the authors are in the html file of each landing pages.
-Try to check their works !
+## Disclaimer
+I don't own the pictures / images used in my project.
+You can find the link of the author in each html page.
+Support them on their dribble page !
 
 ## Getting Started
 
-### Show the pages
-You just need to git clone this repository and open the index.html files in each dist repository.
+### Run the app
+You need to download the module in the package.json file.
+You can use npm or yarn.
+
+### Run the app
+You can run the app with a local server.
+
 
 ## Built With
-
 - Parcel.js
 - Javascript
 - SCSS / CSS
