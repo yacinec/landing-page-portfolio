@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+$bg-c: #eee0d6;
+$banner-c: #f75606;
+$banner-2-c: #fb4900;
+$btn-c: #eec607;
+$text-color: #53060b;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: $bg-c;
+    font-family: 'Open-sans', sans-serif;
+    color: $text-color;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-menu {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav-logo {
+            display: flex;
+            img {
+                width: 150px;
+            }
+        }
+
+        .nav-links {
+            display: flex;
+            width: 80%;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+
+    .nav-btn {
+        a {
+            font-weight: 700;
+            border: 1px solid grey;
+            padding: 10px 30px;
+            transition: 1s;
+
+            &:hover {
+                border: 1px solid $text-color;
+                background: $text-color;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.banner {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 80vh;
+    padding: 0px 30px;
+    margin-top: 10px;
+    background: url('../assets/images/banner.png') no-repeat bottom right;
+    background-size: 100%;
+
+    .banner-text {
+        position: absolute;
+        width: 30%;
+        top: 55%;
+        transform: translateY(-55%);
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        #burnout {
+            color: $banner-2-c;
+            text-shadow: 2px 0 0 $text-color, -2px 0 0 $text-color, 0 2px 0 $text-color, 0 -2px 0 $text-color, 1px 1px $text-color, -1px -1px 0 $text-color, 1px -1px 0 $text-color, -1px 1px 0 $text-color;
+        }
+
+        .btn-group {
+            margin-top: 30px;
+            width: 100%;
+            display: flex;
+
+            .btn {
+                padding: 15px 20px;
+                background: $btn-c;
+                font-weight: 700;
+                border: 1px solid $btn-c;
+                transition: 1s;
+
+                &:hover {
+                    background: $text-color;
+                    border: 1px solid $text-color;
+                    color: $btn-c;
+                }
+            }
+            input {
+                border-radius: 0px;
+                border: none;
+                text-indent: 15px;
+            }
+        }
+    }
+}
+
+.content {
+    width: 100%;
+    margin-top: 75px;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: flex;
+    padding: 0px 25px;
+    justify-content: space-between;
+    align-items: center;
+    
+    .left-block {
+        background: url('../assets/images/soldat.png') right center no-repeat;
+    
+        width: 60%;
+        p {
+            text-transform: uppercase;
+        }
+        h2 {
+            width: 80%;
+            margin-top: 25px;
+            font-size: 2rem;
+            .orange-text {
+                color: $banner-2-c;
+            }
+        }
+    }
+
+    .right-block {
+        width: 35%;
+
+        .right-block-social {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1215px) and (max-width: 1275px) {
+
+    .banner {
+        width: 100%;
+        margin: 0 auto;
+        min-height: 80vh;
+        padding: 0px 30px;
+        margin-top: 10px;
+        background: url('../assets/images/banner.png') no-repeat bottom right;
+        background-size: 100%;
+
+        .banner-text {
+            position: absolute;
+            width: 30%;
+            top: 55%;
+            transform: translateY(-55%);
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            #burnout {
+                color: $banner-2-c;
+                text-shadow: 2px 0 0 $text-color, -2px 0 0 $text-color, 0 2px 0 $text-color, 0 -2px 0 $text-color, 1px 1px $text-color, -1px -1px 0 $text-color, 1px -1px 0 $text-color, -1px 1px 0 $text-color;
+            }
+
+            .btn-group {
+                margin-top: 30px;
+                width: 100%;
+                display: flex;
+
+                .btn {
+                    padding: 15px 20px;
+                    background: $btn-c;
+                    font-weight: 700;
+                    border: 1px solid $btn-c;
+                    transition: 1s;
+                    font-size: 0.9rem;
+
+
+                    &:hover {
+                        background: $text-color;
+                        border: 1px solid $text-color;
+                        color: $btn-c;
+                    }
+                }
+                input {
+                    border-radius: 0px;
+                    border: none;
+                    text-indent: 15px;
+                }
+            }
+        }
+    }
+
+
+    .content {
+        width: 100%;
+        margin-top: 75px;
+        font-weight: 400;
+        font-size: 0.9rem;
+        display: flex;
+        padding: 0px 25px;
+        justify-content: space-between;
+        align-items: center;
+        
+        .left-block {
+            background: url('../assets/images/soldat.png') right center no-repeat;
+        
+            width: 60%;
+            p {
+                text-transform: uppercase;
+            }
+            h2 {
+                width: 80%;
+                margin-top: 25px;
+                font-size: 1.8rem;
+                .orange-text {
+                    color: $banner-2-c;
+                }
+            }
+        }
+
+        .right-block {
+            width: 35%;
+
+            .right-block-social {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;
+            }
+        }
+
+    }
+
+}
+
+
+@media screen and (min-width: 1146px) and (max-width: 1214px) {
+    .banner {
+        width: 100%;
+        margin: 0 auto;
+        min-height: 80vh;
+        padding: 0px 30px;
+        margin-top: 10px;
+        background: url('../assets/images/banner.png') no-repeat bottom right;
+        background-size: 100%;
+
+        .banner-text {
+            position: absolute;
+            width: 30%;
+            top: 55%;
+            transform: translateY(-55%);
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            #burnout {
+                color: $banner-2-c;
+                text-shadow: 2px 0 0 $text-color, -2px 0 0 $text-color, 0 2px 0 $text-color, 0 -2px 0 $text-color, 1px 1px $text-color, -1px -1px 0 $text-color, 1px -1px 0 $text-color, -1px 1px 0 $text-color;
+            }
+
+            .btn-group {
+                margin-top: 30px;
+                width: 100%;
+                display: flex;
+                font-size: 0.7rem;
+
+                .btn {
+                    padding: 15px 20px;
+                    background: $btn-c;
+                    font-weight: 700;
+                    border: 1px solid $btn-c;
+                    transition: 1s;
+
+
+                    &:hover {
+                        background: $text-color;
+                        border: 1px solid $text-color;
+                        color: $btn-c;
+                    }
+                }
+                input {
+                    border-radius: 0px;
+                    border: none;
+                    text-indent: 15px;
+                }
+            }
+        }
+    }
+
+
+    .content {
+        width: 100%;
+        margin-top: 75px;
+        font-weight: 400;
+        font-size: 0.9rem;
+        display: flex;
+        padding: 0px 25px;
+        justify-content: space-between;
+        align-items: center;
+        
+        .left-block {
+            background: url('../assets/images/soldat.png') right center no-repeat;
+        
+            width: 60%;
+            p {
+                text-transform: uppercase;
+            }
+            h2 {
+                width: 80%;
+                margin-top: 25px;
+                font-size: 1.8rem;
+                .orange-text {
+                    color: $banner-2-c;
+                }
+            }
+        }
+
+        .right-block {
+            width: 35%;
+
+            .right-block-social {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;
+            }
+        }
+
+    }
+}
+
+
+@media screen and (min-width: 1101px) and (max-width: 1145px) {
+    .banner {
+        width: 100%;
+        margin: 0 auto;
+        min-height: 80vh;
+        padding: 0px 30px;
+        margin-top: 10px;
+        background: url('../assets/images/banner.png') no-repeat bottom right;
+        background-size: 100%;
+
+        .banner-text {
+            position: absolute;
+            width: 30%;
+            top: 55%;
+            transform: translateY(-55%);
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            #burnout {
+                color: $banner-2-c;
+                text-shadow: 2px 0 0 $text-color, -2px 0 0 $text-color, 0 2px 0 $text-color, 0 -2px 0 $text-color, 1px 1px $text-color, -1px -1px 0 $text-color, 1px -1px 0 $text-color, -1px 1px 0 $text-color;
+            }
+
+            .btn-group {
+                margin-top: 30px;
+                width: 100%;
+                display: flex;
+                font-size: 0.5rem;
+
+                .btn {
+                    padding: 15px 20px;
+                    background: $btn-c;
+                    font-weight: 700;
+                    border: 1px solid $btn-c;
+                    transition: 1s;
+
+
+                    &:hover {
+                        background: $text-color;
+                        border: 1px solid $text-color;
+                        color: $btn-c;
+                    }
+                }
+                input {
+                    border-radius: 0px;
+                    border: none;
+                    text-indent: 15px;
+                }
+            }
+        }
+    }
+
+
+    .content {
+        width: 100%;
+        margin-top: 75px;
+        font-weight: 400;
+        font-size: 0.9rem;
+        display: flex;
+        padding: 0px 25px;
+        justify-content: space-between;
+        align-items: center;
+        
+        .left-block {
+            background: url('../assets/images/soldat.png') right center no-repeat;
+        
+            width: 60%;
+            p {
+                text-transform: uppercase;
+            }
+            h2 {
+                width: 80%;
+                margin-top: 25px;
+                font-size: 1.8rem;
+                .orange-text {
+                    color: $banner-2-c;
+                }
+            }
+        }
+
+        .right-block {
+            width: 35%;
+
+            .right-block-social {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 1100px) {
+    .banner {
+        width: 100%;
+        margin: 0 auto;
+        min-height: 80vh;
+        padding: 0px 30px;
+        margin-top: 10px;
+        background: url('../assets/images/banner.png') no-repeat bottom right;
+        background-size: 100%;
+
+        .banner-text {
+            position: absolute;
+            width: 30%;
+            top: 55%;
+            transform: translateY(-55%);
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            #burnout {
+                color: $banner-2-c;
+                text-shadow: 2px 0 0 $text-color, -2px 0 0 $text-color, 0 2px 0 $text-color, 0 -2px 0 $text-color, 1px 1px $text-color, -1px -1px 0 $text-color, 1px -1px 0 $text-color, -1px 1px 0 $text-color;
+            }
+
+            .btn-group {
+                margin-top: 30px;
+                width: 100%;
+                display: flex;
+                font-size: 1rem;
+
+                .btn {
+                    padding: 15px 20px;
+                    background: $btn-c;
+                    font-weight: 700;
+                    border: 1px solid $btn-c;
+                    transition: 1s;
+
+
+                    &:hover {
+                        background: $text-color;
+                        border: 1px solid $text-color;
+                        color: $btn-c;
+                    }
+                }
+                input {
+                    border-radius: 0px;
+                    border: none;
+                    text-indent: 15px;
+                }
+            }
+        }
+    }
+
+
+    .content {
+        width: 100%;
+        margin-top: 75px;
+        font-weight: 400;
+        font-size: 0.9rem;
+        display: flex;
+        padding: 0px 25px;
+        justify-content: space-between;
+        align-items: center;
+        
+        .left-block {
+            background: url('../assets/images/soldat.png') right center no-repeat;
+        
+            width: 60%;
+            p {
+                text-transform: uppercase;
+            }
+            h2 {
+                width: 80%;
+                margin-top: 25px;
+                font-size: 1.8rem;
+                .orange-text {
+                    color: $banner-2-c;
+                }
+            }
+        }
+
+        .right-block {
+            width: 35%;
+
+            .right-block-social {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;
+            }
+        }
+
+    }
+}
