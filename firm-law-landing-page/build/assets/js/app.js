@@ -40,7 +40,7 @@ new ScrollMagic.Scene({
 
 
 
-
+/*
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -51,7 +51,7 @@ function scrollFunction() {
     navbar.classList.remove("fixed")
   }
 }
-
+*/
 
 const links = document.querySelectorAll('.element__link');
 
